@@ -1,36 +1,88 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌱 Darat Farm — Multi-Farm Task & Scheduling
 
-## Getting Started
+A modern multi-farm management app for scheduling and tracking tasks like cleaning and fertilizing. Built to be simple, fast, and reliable for daily operations.
 
-First, run the development server:
+---
 
+## 📌 Introduction
+Darat Farm centralizes routine farm activities across multiple locations. Create tasks, assign schedules, track progress, and keep a clean history for accountability and planning.
+
+---
+
+## 🔋 Features
+- **Multi-farm management:** Organize tasks by farm/plot.
+- **Task scheduling:** Daily/weekly/monthly routines (cleaning, fertilizing, watering, inspections).
+- **Status tracking:** To‑Do, In‑Progress, Done.
+- **Notes & attachments:** Add context and evidence.
+- **Responsive UI:** Optimized for desktop and mobile.
+
+---
+
+## ⚙️ Tech Stack
+- **Framework:** Next.js + React
+- **Language:** TypeScript
+- **UI:** Tailwind CSS, Radix UI, shadcn/ui
+- **Data/SDKs:** Appwrite SDK, TanStack Query, Zod
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js (LTS recommended)
+- npm, pnpm, or yarn
+
+### Installation
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/hatamisg/Darat-Farm.git
+cd Darat-Farm
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Development
+```bash
+npm run dev
+```
+App runs on `http://localhost:3000` by default.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🔐 Env Setup
+Copy `.env.example` to `.env` and fill in values. Do not commit `.env`.
 
-## Learn More
+```bash
+cp .env.example .env
+```
 
-To learn more about Next.js, take a look at the following resources:
+Key variables include:
+- `NEXT_PUBLIC_APP_URL`: Public site URL (e.g., `http://localhost:3000`).
+- `NEXT_PUBLIC_APPWRITE_ENDPOINT`: Appwrite endpoint URL.
+- `NEXT_PUBLIC_APPWRITE_PROJECT`: Appwrite project ID.
+- `NEXT_PUBLIC_APPWRITE_DATABASE_ID`: Database ID.
+- `NEXT_PUBLIC_APPWRITE_WORKSPACES_ID`: Workspaces collection ID.
+- `NEXT_PUBLIC_APPWRITE_MEMBERS_ID`: Members collection ID.
+- `NEXT_PUBLIC_APPWRITE_PROJECTS_ID`: Projects collection ID.
+- `NEXT_PUBLIC_APPWRITE_TASKS_ID`: Tasks collection ID.
+- `NEXT_PUBLIC_APPWRITE_IMAGES_BUCKET_ID`: Images bucket ID.
+- `NEXT_APPWRITE_KEY`: Server-side API key (keep secret; not exposed).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🧰 Scripts
+- `npm run dev`: Start development server
+- `npm run build`: Build for production
+- `npm run start`: Run production build
+- `npm run lint`: Lint codebase
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🚢 Deployment
+- Any platform that supports Next.js (e.g., Vercel, Node server).
+- Ensure all environment variables are set in the hosting provider.
+- For SSR/edge environments, keep server-only keys private.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 📄 License
+MIT. See `LICENSE` if provided, or update to your preferred license.
+

@@ -1,7 +1,8 @@
 {
-  "name": "jira-clone",
+  "name": "darat-farm",
   "version": "0.1.0",
   "private": true,
+  "description": "Multi-farm task and scheduling web app.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
